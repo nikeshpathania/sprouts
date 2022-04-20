@@ -1,0 +1,19 @@
+@use '../abstracts/variable' as *;
+@use '../base/typography' as *;
+
+.copyright{
+  border-top: 1px solid rgba(var(--bs-white-rgb), 60%);
+  padding: 1rem 0;
+
+  &.text-white {
+    @include copyright;
+    font-size: 12px;
+    color: rgba(var(--bs-white-rgb), 60%)!important;
+    a{
+      color: rgba(var(--bs-white-rgb), 60%)!important;
+      text-decoration: none;
+      margin: 0 5px;
+    }
+  }
+  
+}

@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Outfit:wght@300;400;700&family=Raleway:wght@700&display=swap');
+
+$heading_font: 'Raleway', sans-serif;
+$base_font   : 'Outfit', sans-serif;
+$nunito_font   : 'Nunito', sans-serif;
+
+$heading_h1 : 56px;
+
+@mixin heading_h1 {
+  font-family: $heading_font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 4rem;
+}
+
+@mixin heading_h2 {
+  font-family: $heading_font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.625rem;
+  line-height: 3rem;
+}
+
+@mixin heading_h3 {
+  font-family: $heading_font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.75rem;
+  line-height: 2.125rem;
+}
+
+@mixin style_2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.5rem;
+  line-height: normal;
+
+  letter-spacing: 0.01em;
+}
+
+@mixin body_p1{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25rem; // 20px
+  line-height: 1.875rem; // 30px
+
+  letter-spacing: 0.005em;
+}
+
+@mixin body_p2 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125rem; // 18px
+  line-height: 1.625rem; // 26px
+
+  letter-spacing: 0.005em;
+}
+
+@mixin body_p3 {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1rem; // 16px
+  line-height: 1.5rem; // 24px
+  
+  letter-spacing: 0.005em;
+}
+
+@mixin btn_lg {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.125rem; // 18px
+  line-height: 1.5rem; // 24px
+}
+@mixin btn_lg_1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem; // 16px
+  line-height: 1.5rem; // 24px
+  
+  text-align: center;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+
+@mixin btn_sm {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem; // 16px
+  line-height: 1.5rem; // 24px
+}
+
+@mixin logo {
+  font-family: 'Goldplay Alt';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 38px;
+}
+
+@mixin copyright {
+  font-family: $nunito_font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+@mixin navigatio_btn_sm {
+  font-family: $base_font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+body {
+  font-family: $base_font;
+}
+
+.heading_h1 {
+  @include heading_h1;
+}
+
+.heading_h2 {
+  @include heading_h2;
+}
+
+.style_2 {
+  @include style_2;
+}
+
+.style_2 {
+  @include style_2;
+}
+
+.heading_h3 {
+  @include heading_h3;
+}
+
+.body_p1 {
+  @include body_p1;
+}
+
+.body_p2 {
+  @include body_p2;
+}
+
+.body_p3 {
+  @include body_p3;
+}
+
+.small{
+  @include btn_lg_1;
+  text-transform: capitalize;
+}
+
+.btn_lg{
+  @include btn_lg;
+}
+
+.btn_lg_1{
+  @include btn_lg;
+}
+.btn_sm{
+  @include btn_sm;
+}
+
+.navigatio_btn_sm  {
+  @include navigatio_btn_sm;
+}

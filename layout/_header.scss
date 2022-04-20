@@ -1,0 +1,14 @@
+@use '../abstracts/variable' as *;
+@use '../base/typography' as *;
+
+header {
+  .btn-sm {
+    @include navigatio_btn_sm;
+    padding: 10px 24px;
+
+    @media screen and (max-width:575px) {
+      padding: 10px;
+      font-size: 10px;
+    }
+  }
+}

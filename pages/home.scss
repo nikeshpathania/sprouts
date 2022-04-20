@@ -1,0 +1,179 @@
+@use '../abstracts/variable' as *;
+@use '../base/typography' as *;
+
+.heading_h1 {
+  @include heading_h1;
+}
+
+ .tag {
+   background-color: rgba($data-color-secondary, 10%);
+   color: $data-color-secondary;
+   border-radius: 100px;
+   padding: 6px 16px;
+ }
+
+.cta_row {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.trusted_row {
+  position: relative;
+
+  small {
+    color: $data-color-Shade1;
+    font-weight: bold;
+  }
+
+  .trusted_row--img {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    @media screen and (max-width: 575px) {
+      justify-content: center;
+    }
+
+    img{
+      max-width: 115px;
+    }
+  }
+}
+
+.hero-container {
+  position: relative;
+
+  .pictures{
+      position: relative;
+      width: 100%;
+      .hero-image {
+        width: 100%;
+      }
+  }
+}
+
+// .headerImg_group{
+//   position: relative;
+//   height: 589px;
+//   width: 100%;
+//   display: flex;
+
+//   %absolute {
+//     position: absolute;
+//   }
+
+//   &--one {
+//     @extend %absolute;
+//     top: 0;
+//     transform: translateX(-50%);
+//     left: 50%;
+//   }
+//   &--two {
+//     @extend %absolute;
+//     z-index: 1;
+//     top: 0;
+//     left: 0
+//   }
+//   &--three {
+//     @extend %absolute;
+//     z-index: 2;
+//     bottom: 40px;
+//     right: 0;
+//   }
+// }
+
+// Global
+  .border-right {
+    &::after {
+      border-right: 1px solid $data-color-Shade3;
+      content: '';
+      position: absolute;
+      right: 0;
+      width: 1px;
+      height: 100%;
+    }
+  }
+
+  .no-border-bottom {
+    border-bottom: none!important;
+  }
+
+
+// Why Album Section
+.why-album {
+  
+  .custom-col {
+    flex: 0 0 50%;
+    display: flex;
+    position: relative;
+    border-bottom: 1px solid $data-color-Shade3;
+    flex-direction: column;
+    text-align: center;    
+
+    .custome-col_inside {
+      max-width: 100%;
+      margin: 40px;
+
+      @media screen and (max-width:575px) {
+        margin: 40px 16px;
+      }
+    }
+  }
+}
+
+.cta_block {
+  background-color: $data-color-secondary;
+}
+
+// Brands Logos
+.brands{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  img {
+    max-width: 160px;
+  }
+}
+
+
+// Banner 
+.cta-banner {
+
+  .banner_img {
+    position: relative;
+    max-width: 475px;
+    height: 424px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+  
+    @media screen and (min-width: 575px) {
+      margin-top: 0;
+    }
+  
+    @media screen and (min-width: 1200px) {
+      margin-top: -80px;
+    }
+  
+    img {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+  
+    }
+  }
+// Bootstrap Override
+  .p-5{
+    @media screen and (max-width:575px) {
+      padding: 1rem!important;
+    }
+  }
+
+  .m-4{
+    @media screen and (max-width:575px) {
+    }
+  }
+}

@@ -1,0 +1,131 @@
+@use '../abstracts/variable' as *;
+@use '../base/typography' as *;
+
+.navbar-brand {
+  @include logo;
+  img{
+    margin-right: 8px;
+    max-width: 140px;
+
+    @media screen and (max-width:575px) {
+      max-width: 115px;
+    }
+  }
+}
+
+// .bg-light {
+//   background-image: url($light-image);
+// }
+
+.navbar-light .navbar-nav .nav-link {
+  color: $data-color-Shade2;
+
+  &:focus,
+  &:hover {
+    color: $data-color-secondary;
+  }
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: $constWhite;
+
+  &:focus,
+  &:hover {
+    color: $data-color-secondary;
+  }
+}  
+
+
+
+.lead {
+  @include body_p1;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+
+  rect {
+    fill: $data-color-secondary-light;
+
+  }
+  text {
+    @include heading_h3;
+    fill: $data-color-Shade1;
+  }
+}
+
+.card {
+  border: none;
+  box-shadow: 0px 21.068px 52.6699px rgba(0, 21, 89, 0.06)!important;
+}
+.card-body {
+  &__inside {
+    min-height: 135px;
+
+    @media screen and (max-width: 575px) {
+      min-height: auto;
+    }
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    @include body_p2;
+
+    li {
+      background: url($list-star-image) no-repeat;
+      padding-left: 32px;
+      margin-bottom: 16px;
+    }
+  }
+}
+
+
+.feature {
+  .card {
+    .list {
+      min-height: 190px;
+    }
+    ul {
+      list-style: none;
+      margin: 16px 0;
+      padding: 0;
+      @include body_p2;
+  
+      li {
+        background: url($list-tick-image) 0 4px no-repeat;
+        padding-left: 32px;
+        margin-bottom: 16px;
+      }
+    }
+  }
+
+  .heading_h3 {
+    min-height: 72px;
+  }
+}
+
+
+// .py-5 {
+//   @media screen and (max-width:575px) {
+//     padding-top: 1rem!important;
+//     padding-bottom: 1rem!important;
+//   }
+// }
+
+//  .px-5 {
+//   padding-left: 1rem!important;
+//   padding-right: 1rem!important;
+//  }
+
+// .p-5{
+//   @media screen and (max-width:575px) {
+//     padding: 1rem!important;
+//   }
+// }
+
+// .m-4{
+//   @media screen and (max-width:575px) {
+//   }
+// }

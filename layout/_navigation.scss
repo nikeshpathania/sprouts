@@ -1,0 +1,16 @@
+
+@use '../abstracts/variable' as *;
+@use '../base/typography' as *;
+
+#navbar_top {
+  transition: .5ms ease-in-out;
+}
+.navbar_top{
+  background-color: $constWhite;
+  box-shadow: 0px 21px 53px rgba(var(--shadow-rgb), .6);
+}
+
+.navbar {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}

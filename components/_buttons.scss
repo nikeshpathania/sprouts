@@ -1,0 +1,38 @@
+@use '../abstracts/variable' as *;
+@use '../base/typography' as *;
+
+.btn-lg {
+  @include btn_lg;
+  padding: 14px 40px;
+}
+
+.btn-sm {
+  @include btn_sm;
+  padding: 14px 20px; // After update padding for feature we have to change 40 to 20 due to big space
+}
+
+.btn-primary {
+  background-color: $data-color-secondary;
+  border-color: $data-color-secondary;
+  border-radius: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  &:hover {
+    background-color: $data-color-secondary-dark;
+    border-color: $data-color-secondary-dark;
+  }
+
+  &.disabled, 
+  &:disabled {
+    background-color: $data-color-disabled;
+    border-color: $data-color-disabled;
+    color: $data-color-disabled-text;
+  }
+}
+
+.btn-dark {
+  background-color: $data-color-Shade1;
+  border-color: $data-color-Shade1;
+  border-radius: 0;
+  text-transform: uppercase;
+}

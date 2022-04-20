@@ -1,0 +1,34 @@
+:root {
+  --bs-dark-rgb: 14, 41, 51;
+  --shadow-rgb: 0, 21, 89,;
+}
+
+$data-color-secondary : #00C553;
+$data-color-secondary-light : lighten($data-color-secondary, 58%);
+$data-color-secondary-dark : #00AB48;
+$data-color-Shade0: #000;
+$data-color-Shade1: #0E2933;
+$data-color-Shade2: #082313;
+$data-color-Shade3 :#0D3936;
+
+$constWhite: #fff;
+
+// Btn Disabled Style
+$data-color-disabled : #BFEAD1;
+$data-color-disabled-text: #EEFFF5;
+
+$list-star-image: './assets/Star.svg';
+$list-tick-image: './assets/Group_1000002562.svg';
+$dark-image: './assets/Dark_BG.svg';
+$light-image: './assets/BG_light.svg';
+
+body {
+  background-image: url($light-image);
+  background-size: cover;
+}
+
+
+
+
+
+
