@@ -1,6 +1,7 @@
 :root {
   --bs-dark-rgb: 14, 41, 51;
   --shadow-rgb: 0, 21, 89,;
+  --bs-body-font-size: 18px;
 }
 
 $data-color-secondary : #00C553;
@@ -23,6 +24,7 @@ $dark-image: './assets/Dark_BG.svg';
 $light-image: './assets/BG_light.svg';
 
 body {
+  font-size: var(--bs-body-font-size);
   background-image: url($light-image);
   background-size: cover;
 }

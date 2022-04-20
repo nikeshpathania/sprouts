@@ -22,7 +22,6 @@
 
   small {
     color: $data-color-Shade1;
-    font-weight: bold;
   }
 
   .trusted_row--img {
@@ -35,12 +34,18 @@
     }
 
     img{
-      max-width: 115px;
+    
+      @media screen and (max-width: 575px) {
+        max-width: 100px;
+      }
+      @media screen and (min-width: 992px) {
+        max-width: 105px;
+      }
     }
   }
 }
 
-.hero-container {
+.hero-container-img {
   position: relative;
 
   .pictures{
@@ -101,7 +106,11 @@
 
 // Why Album Section
 .why-album {
-  
+
+  .text-muted {
+    color: #385964!important;
+  }
+
   .custom-col {
     flex: 0 0 50%;
     display: flex;
@@ -111,7 +120,7 @@
     text-align: center;    
 
     .custome-col_inside {
-      max-width: 100%;
+      max-width: 13em;
       margin: 40px;
 
       @media screen and (max-width:575px) {

@@ -2,13 +2,13 @@
 @use '../base/typography' as *;
 
 .btn-lg {
-  @include btn_lg;
+  @include btn_sm;
   padding: 14px 40px;
 }
 
 .btn-sm {
   @include btn_sm;
-  padding: 14px 20px; // After update padding for feature we have to change 40 to 20 due to big space
+  padding: 14px 40px; // After update padding for feature we have to change 40 to 20 due to big space
 }
 
 .btn-primary {
@@ -17,7 +17,8 @@
   border-radius: 0;
   text-transform: uppercase;
   letter-spacing: 0.01em;
-  &:hover {
+  &:hover,
+  &:focus{
     background-color: $data-color-secondary-dark;
     border-color: $data-color-secondary-dark;
   }

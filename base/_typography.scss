@@ -18,11 +18,19 @@ $heading_h1 : 56px;
   font-family: $heading_font;
   font-style: normal;
   font-weight: 700;
-  font-size: 2.625rem;
-  line-height: 3rem;
+  font-size: 2.5rem;
+  line-height: 3.25rem;
 }
 
 @mixin heading_h3 {
+  font-family: $heading_font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.375rem;
+}
+
+@mixin heading_h4 {
   font-family: $heading_font;
   font-style: normal;
   font-weight: 700;
@@ -39,7 +47,7 @@ $heading_h1 : 56px;
   letter-spacing: 0.01em;
 }
 
-@mixin body_p1{
+@mixin subTitle{
   font-style: normal;
   font-weight: 400;
   font-size: 1.25rem; // 20px
@@ -59,7 +67,7 @@ $heading_h1 : 56px;
 
 @mixin body_p3 {
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 1rem; // 16px
   line-height: 1.5rem; // 24px
   
@@ -138,8 +146,12 @@ body {
   @include heading_h3;
 }
 
-.body_p1 {
-  @include body_p1;
+.heading_h4 {
+  @include heading_h4;
+}
+
+.subTitle {
+  @include subTitle;
 }
 
 .body_p2 {
