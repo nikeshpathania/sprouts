@@ -1,0 +1,467 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&family=Outfit:wght@300;400;700&family=Raleway:wght@700&display=swap");
+:root {
+  --bs-dark-rgb: 14, 41, 51;
+  --shadow-rgb: 0, 21, 89,;
+}
+
+body {
+  background-image: url("./assets/BG_light.svg");
+  background-size: cover;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+}
+
+.heading_h1 {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 4rem;
+}
+
+.heading_h2 {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.625rem;
+  line-height: 3rem;
+}
+
+.style_2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.5rem;
+  line-height: normal;
+  letter-spacing: 0.01em;
+}
+
+.style_2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.5rem;
+  line-height: normal;
+  letter-spacing: 0.01em;
+}
+
+.heading_h3 {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.75rem;
+  line-height: 2.125rem;
+}
+
+.body_p1 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  letter-spacing: 0.005em;
+}
+
+.body_p2 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+  letter-spacing: 0.005em;
+}
+
+.body_p3 {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.005em;
+}
+
+.small {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-align: center;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  text-transform: capitalize;
+}
+
+.btn_lg {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+}
+
+.btn_lg_1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+}
+
+.btn_sm {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.navigatio_btn_sm {
+  font-family: "Outfit", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.copyright {
+  border-top: 1px solid rgba(var(--bs-white-rgb), 60%);
+  padding: 1rem 0;
+}
+.copyright.text-white {
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  font-size: 12px;
+  color: rgba(var(--bs-white-rgb), 60%) !important;
+}
+.copyright.text-white a {
+  color: rgba(var(--bs-white-rgb), 60%) !important;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+#navbar_top {
+  transition: 0.5ms ease-in-out;
+}
+
+.navbar_top {
+  background-color: #fff;
+  box-shadow: 0px 21px 53px rgba(var(--shadow-rgb), 0.6);
+}
+
+.navbar {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.navbar-brand {
+  font-family: "Goldplay Alt";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 38px;
+}
+.navbar-brand img {
+  margin-right: 8px;
+  max-width: 140px;
+}
+@media screen and (max-width: 575px) {
+  .navbar-brand img {
+    max-width: 115px;
+  }
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #082313;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+  color: #00C553;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+}
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+  color: #00C553;
+}
+
+.lead {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  letter-spacing: 0.005em;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+}
+.bd-placeholder-img rect {
+  fill: #eefff5;
+}
+.bd-placeholder-img text {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.75rem;
+  line-height: 2.125rem;
+  fill: #0E2933;
+}
+
+.card {
+  border: none;
+  box-shadow: 0px 21.068px 52.6699px rgba(0, 21, 89, 0.06) !important;
+}
+
+.card-body__inside {
+  min-height: 135px;
+}
+@media screen and (max-width: 575px) {
+  .card-body__inside {
+    min-height: auto;
+  }
+}
+.card-body ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+  letter-spacing: 0.005em;
+}
+.card-body ul li {
+  background: url("./assets/Star.svg") no-repeat;
+  padding-left: 32px;
+  margin-bottom: 16px;
+}
+
+.feature .card .list {
+  min-height: 190px;
+}
+.feature .card ul {
+  list-style: none;
+  margin: 16px 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+  letter-spacing: 0.005em;
+}
+.feature .card ul li {
+  background: url("./assets/Group_1000002562.svg") 0 4px no-repeat;
+  padding-left: 32px;
+  margin-bottom: 16px;
+}
+.feature .heading_h3 {
+  min-height: 72px;
+}
+
+.btn-lg {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  padding: 14px 40px;
+}
+
+.btn-sm {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding: 14px 20px;
+}
+
+.btn-primary {
+  background-color: #00C553;
+  border-color: #00C553;
+  border-radius: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+}
+.btn-primary:hover {
+  background-color: #00AB48;
+  border-color: #00AB48;
+}
+.btn-primary.disabled, .btn-primary:disabled {
+  background-color: #BFEAD1;
+  border-color: #BFEAD1;
+  color: #EEFFF5;
+}
+
+.btn-dark {
+  background-color: #0E2933;
+  border-color: #0E2933;
+  border-radius: 0;
+  text-transform: uppercase;
+}
+
+.heading_h1 {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 4rem;
+}
+
+.tag {
+  background-color: rgba(0, 197, 83, 0.1);
+  color: #00C553;
+  border-radius: 100px;
+  padding: 6px 16px;
+}
+
+.cta_row {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.trusted_row {
+  position: relative;
+}
+.trusted_row small {
+  color: #0E2933;
+  font-weight: bold;
+}
+.trusted_row .trusted_row--img {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+@media screen and (max-width: 575px) {
+  .trusted_row .trusted_row--img {
+    justify-content: center;
+  }
+}
+.trusted_row .trusted_row--img img {
+  max-width: 115px;
+}
+
+.hero-container {
+  position: relative;
+}
+.hero-container .pictures {
+  position: relative;
+  width: 100%;
+}
+.hero-container .pictures .hero-image {
+  width: 100%;
+}
+
+.border-right::after {
+  border-right: 1px solid #0D3936;
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 1px;
+  height: 100%;
+}
+
+.no-border-bottom {
+  border-bottom: none !important;
+}
+
+.why-album .custom-col {
+  flex: 0 0 50%;
+  display: flex;
+  position: relative;
+  border-bottom: 1px solid #0D3936;
+  flex-direction: column;
+  text-align: center;
+}
+.why-album .custom-col .custome-col_inside {
+  max-width: 100%;
+  margin: 40px;
+}
+@media screen and (max-width: 575px) {
+  .why-album .custom-col .custome-col_inside {
+    margin: 40px 16px;
+  }
+}
+
+.cta_block {
+  background-color: #00C553;
+}
+
+.brands {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.brands img {
+  max-width: 160px;
+}
+
+.cta-banner .banner_img {
+  position: relative;
+  max-width: 475px;
+  height: 424px;
+  width: 100%;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+}
+@media screen and (min-width: 575px) {
+  .cta-banner .banner_img {
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cta-banner .banner_img {
+    margin-top: -80px;
+  }
+}
+.cta-banner .banner_img img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+@media screen and (max-width: 575px) {
+  .cta-banner .p-5 {
+    padding: 1rem !important;
+  }
+}
+footer .collapse:not(.show) {
+  display: block;
+}
+footer .icon {
+  color: #EEFFF5;
+}
+footer .icon svg {
+  width: 40px;
+  height: 40px;
+  margin: 0.5em;
+  fill: #fff;
+}
+footer .icon svg path {
+  fill: #fff;
+}
+footer .white_color {
+  fill: #fff;
+}
+@media screen and (max-width: 575px) {
+  footer .py-5 {
+    padding-top: 1rem !important;
+    padding-bottom: 2rem !important;
+  }
+}
+
+header .btn-sm {
+  font-family: "Outfit", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 10px 24px;
+}
+@media screen and (max-width: 575px) {
+  header .btn-sm {
+    padding: 10px;
+    font-size: 10px;
+  }
+}
