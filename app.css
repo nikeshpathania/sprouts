@@ -398,7 +398,7 @@ body {
 }
 @media screen and (max-width: 575px) {
   .why-album .custom-col .custome-col_inside {
-    margin: 40px 3px;
+    margin: 40px 0 !important;
   }
 }
 
