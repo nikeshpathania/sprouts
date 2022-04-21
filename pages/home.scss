@@ -158,7 +158,10 @@
     right: 0;
     margin-inline: auto;
   
-    @media screen and (min-width: 575px) {
+    @media screen and (max-width: 575px) {
+      height: 310px;
+    }
+    @media screen and (min-width: 576px) {
       margin-top: 0;
     }
   

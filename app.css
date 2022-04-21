@@ -424,7 +424,12 @@ body {
   right: 0;
   margin-inline: auto;
 }
-@media screen and (min-width: 575px) {
+@media screen and (max-width: 575px) {
+  .cta-banner .banner_img {
+    height: 310px;
+  }
+}
+@media screen and (min-width: 576px) {
   .cta-banner .banner_img {
     margin-top: 0;
   }
