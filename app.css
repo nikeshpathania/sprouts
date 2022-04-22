@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito&family=Outfit:wght@300;400;700&family=Raleway:wght@700&display=swap");
 :root {
   --bs-dark-rgb: 14, 41, 51;
-  --shadow-rgb: 0, 21, 89,;
+  --shadow-rgb: 0, 21, 89;
   --bs-body-font-size: 18px;
 }
 
@@ -156,7 +156,7 @@ body {
 
 .navbar_top {
   background-color: #fff;
-  box-shadow: 0px 21px 53px rgba(var(--shadow-rgb), 0.6);
+  box-shadow: 0px 0 10px rgba(var(--shadow-rgb), 0.1);
 }
 
 .navbar {
