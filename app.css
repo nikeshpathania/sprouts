@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito&family=Outfit:wght@300;400;700&family=Raleway:wght@700&display=swap");
 :root {
   --bs-dark-rgb: 14, 41, 51;
-  --shadow-rgb: 0, 21, 89,;
+  --shadow-rgb: 0, 21, 89;
   --bs-body-font-size: 18px;
 }
 
@@ -13,10 +13,6 @@ body {
 
 p {
   margin-bottom: 0;
-}
-
-body {
-  font-family: "Outfit", sans-serif;
 }
 
 .heading_h1 {
@@ -156,7 +152,7 @@ body {
 
 .navbar_top {
   background-color: #fff;
-  box-shadow: 0px 21px 53px rgba(var(--shadow-rgb), 0.6);
+  box-shadow: 0px 0 10px rgba(var(--shadow-rgb), 0.1);
 }
 
 .navbar {
@@ -351,11 +347,6 @@ body {
     max-width: 150px;
   }
 }
-@media screen and (min-width: 992px) {
-  .trusted_row .trusted_row--img img {
-    max-width: 105px;
-  }
-}
 
 .hero-container-img {
   position: relative;
@@ -364,8 +355,20 @@ body {
   position: relative;
   width: 100%;
 }
+@media screen and (min-width: 1200px) {
+  .hero-container-img .pictures {
+    height: 420px;
+    text-align: right;
+  }
+}
 .hero-container-img .pictures .hero-image {
   width: 100%;
+}
+@media screen and (min-width: 1200px) {
+  .hero-container-img .pictures .hero-image {
+    left: 0;
+    position: absolute;
+  }
 }
 
 .border-right::after {
