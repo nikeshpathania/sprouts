@@ -3,7 +3,7 @@
 @use '../base/typography' as *;
 
 #navbar_top {
-  transition: .5ms ease-in-out;
+  transition: .25s ease-out;
 }
 .navbar_top{
   background-color: $constWhite;
