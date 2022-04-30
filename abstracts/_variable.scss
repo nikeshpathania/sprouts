@@ -2,6 +2,7 @@
   --bs-dark-rgb: 14, 41, 51;
   --shadow-rgb: 0, 21, 89;
   --bs-body-font-size: 18px;
+  --bs-body-font-family: 'Outfit', sans-serif;
 }
 
 $data-color-secondary : #00C553;
@@ -24,6 +25,7 @@ $dark-image: './assets/Dark_BG.svg';
 $light-image: './assets/BG_light.svg';
 
 body {
+  font-family: var( --bs-body-font-family);
   font-size: var(--bs-body-font-size);
   background-image: url($light-image);
   background-size: cover;
