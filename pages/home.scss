@@ -34,12 +34,12 @@
     }
 
     img{
-    
       @media screen and (max-width: 575px) {
-        max-width: 150px;
+        max-width: 140px;
+        height: 60px;
       }
-      @media screen and (min-width: 992px) {
-        max-width: 105px;
+      @media screen and (min-width: 575px) {
+        max-width: 160px;
       }
     }
   }
@@ -51,8 +51,20 @@
   .pictures{
       position: relative;
       width: 100%;
+     
+     
+      @media screen and (min-width: 1200px) {
+        height: 420px;
+        text-align: right;
+      }
       .hero-image {
+        
         width: 100%;
+
+        @media screen and (min-width: 1200px) {
+          left: 0;
+          position: absolute;
+        }
       }
   }
 }
@@ -141,7 +153,13 @@
   gap: 1rem;
 
   img {
-    max-width: 160px;
+    max-width: 140px;
+    height: 60px;
+
+    @media screen and (min-width:1400px) {
+      max-width: 160px;
+      height: 70px;
+    }
   }
 }
 

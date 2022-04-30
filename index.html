@@ -81,11 +81,9 @@
     <section class="position-relative">
       <div class="container position-relative zindex-5 py-5 mt-5">
         <div class="row justify-content-md-start justify-content-center">
-          <div
-          class="col-md-12 col-xl-5 order-xl-1 order-2 d-flex flex-column justify-content-between mt-4 pt-2 text-md-start text-center">
+          <div class="col-md-12 col-xl-5 order-xl-1 order-2 d-flex flex-column justify-content-between mt-4 pt-2 text-md-start text-center">
             <div>
-              <div
-                class="d-inline-flex align-items-center position-relative mb-4 tag">
+              <div class="d-inline-flex align-items-center position-relative mb-4 tag">
                 Sprouts ABM Platform
               </div>
               <h1 class="heading_h1 mb-md-4">
@@ -95,55 +93,11 @@
                 Seamless and Affordable - Who knew getting clients can be this easy?
               </div>
               <div class="cta_row">
-
-             
                 <a href="contact-us.html" class="btn btn-lg btn-primary mb-5">Talk to an Expert</a>
-                
-
               </div>
-
-              <div class="hero-container-img d-block d-sm-none">
-                <div class="pictures">
-                  <img 
-                    class="hero-image" 
-                    src="./assets/Sprouts_Heroimage.png" 
-                    alt="">
-                </div class="pictures">
-              </div>
-              <div class="trusted_row">
-                <small class="small"> Trusted by many bussiness: </small>
-                <div class="trusted_row--img mt-2">
-                  <img src="./assets/Group_1000002560.png" alt="" />
-                  <img src="./assets/Group_1000002557.png" alt="" />
-                  <img src="./assets/Group_1000002558.png" alt="" />
-                  <img src="./assets/Group_1000002559.png" alt="" />
-                </div>
-              </div>
-
-
             </div>
           </div>
           <div class="col-md-12 col-xl-7 order-xl-2 order-1 d-none d-sm-block">
-              <!-- Image Place Holder -->
-            <!-- <div class="header-img">
-              <picture class="headerImg_group">
-                <img
-                  class="headerImg_group--one"
-                  src="./assets/Group_1000002351.png"
-                  alt=""
-                />
-                <img
-                  class="headerImg_group--two"
-                  src="./assets/Group_1000002359.png"
-                  alt=""
-                />
-                <img
-                  class="headerImg_group--three"
-                  src="./assets/Group_1000002357.png"
-                  alt=""
-                />
-              </picture>
-            </div> -->
             <div class="hero-container-img pt-4 ">
               <div class="pictures">
                 <img 
@@ -151,6 +105,26 @@
                   src="./assets/Sprouts_Heroimage.png" 
                   alt="">
               </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="hero-container-img d-block d-sm-none">
+            <div class="pictures">
+              <img 
+                class="hero-image" 
+                src="./assets/Sprouts_Heroimage.png" 
+                alt="">
+            </div>
+          </div>
+          <div class="trusted_row text-center text-md-start justify-content-center justify-content-lg-start">
+            <small class="small"> Trusted by many bussiness: </small>
+            <div class="trusted_row--img mt-2">
+              <img src="./assets/Edukemy.png" alt="" />
+              <img src="./assets/Plentina.png" alt="" />
+              <img src="./assets/Synctactic.png" alt="" />
+              <img src="./assets/Lucidity.png" alt="" />
+              <img src="./assets/Codilar.png" alt="" />
             </div>
           </div>
         </div>
@@ -371,7 +345,7 @@
 
 
     <section class="position-relative d-flex align-items-top">
-        <dkiv class="container position-relative zindex-5 py-5">
+        <div class="container position-relative zindex-5 py-5 mb-lg-5">
         <div class="row justify-content-md-start justify-content-top text-center">
           <div class="col-lg-8 offset-lg-2 d-flex flex-column justify-content-between mt-4 pt-2 text-center">
           <h2 class="heading_h2 mb-1">
@@ -385,16 +359,15 @@
         </div>
         <div class="col-lg-10 offset-lg-1 mt-3 pt-2">
           <p class="mb-4"><strong>Here is a quick snapshot of our backgrounds:</strong></p>
-          <picture class="w-100 brands">
+          <picture class="w-100 brands justify-content-center">
             <img src="./assets/Google.png" alt="">
             <img src="./assets/Facebook.png" alt="">
             <img src="./assets/Stanford.png" alt="">
-            <img src="./assets/Microsoft.png" alt="">
-            <img src="./assets/Pepsico.png" alt="">
+
             <img src="./assets/Nvidia.png" alt="">
             <img src="./assets/Freshworks.png" alt="">
             <img src="./assets/Highradius.png" alt="">
-            <img src="./assets/Dropthought.png" alt="">
+
           </picture>
 
         </div>
@@ -504,7 +477,16 @@
         </div>
         </div>
     </footer>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PWJVCM6REN"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
+      gtag('config', 'G-PWJVCM6REN');
+      gtag('event', 'ip_address', {'ip': '<?=$ip;?>'});
+    </script>
     <script src="./dist/js/bootstrap.bundle.js"></script>
     <script src="script.js"></script>
   </body>

@@ -176,7 +176,16 @@
         </div>
         </div>
     </footer>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PWJVCM6REN"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
+      gtag('config', 'G-PWJVCM6REN');
+      gtag('event', 'ip_address', {'ip': '<?=$ip;?>'});
+    </script>
     <script src="./dist/js/bootstrap.bundle.js"></script>
     <script src="script.js"></script>
   </body>
