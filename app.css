@@ -283,6 +283,7 @@ p {
 }
 
 .btn-primary {
+  font-family: "Outfit", sans-serif;
   background-color: #00C553;
   border-color: #00C553;
   border-radius: 0;
