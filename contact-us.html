@@ -18,6 +18,12 @@
       href="./dist/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="app.css" />
+
+    <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+   />
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
   </head>
   <body>
     <header>
@@ -85,27 +91,54 @@
     >
       <div class="container position-relative zindex-5 py-5 mt-5">
         <div class="row justify-content-md-start justify-content-top mb-5">
-          <div
-            class="col-xl-6 col-sm-8 offset-sm-2 offset-xl-3 d-flex flex-column justify-content-between mt-4 pt-2 text-center"
-          >
-            <h2 class="heading_h2 mb-3">
+              <!-- Thank you  -->
+              <div class="col-xl-6 col-sm-8 offset-sm-2 offset-xl-3 d-flex flex-column justify-content-between mt-4 pt-2 text-center">
+                <div class="thankyou-bg">
+                  ‍👍 <br>
+      Thank you for contacting us, our representative will get in touch with you soon!
+                </div>
+              </div>
+          
+          <!-- Contact US Page start here --> 
+          <div class="col-xl-6 col-sm-8 offset-sm-2 offset-xl-3 d-flex flex-column justify-content-between mt-4 pt-2">
+      
+          
+            <h2 class="heading_h2 mb-3 text-center">
               Contact Us
             </h2>
-            <p class="subTitle text-center">
-              A plug-and-play ABM platform that has all the tools and
-              integrations you need for demand gen and sales intelligence.
+            <p class="subTitle text-center mb-4">
+              A plug-and-play ABM platform that has all the tools and integrations you need for demand gen and sales intelligence.
             </p>
-          </div>
-        </div>
 
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-          <div
-            class="col col-sm-12 col-md-8 offset-md-2 me-xl-2"
-          >
-          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf43YUR3dtGx6yu63JVT-Q-hWl2mw80txuWAJ0Q1SIQDH2uJw/viewform?embedded=true" width="100%" style="height: 900px;" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            <!-- Form Start here -->
+            <form id="login" onsubmit="process(event)">
+              <div class="form-bg">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Full name</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Your Name">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Company Email</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="yourname@example.com">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Title</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Your Title">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Phone Number</label>
+                <input class="form-control" id="phone" type="tel" placeholder="800 2738 9700">
+              </div>
+              <div class="col-12 ">
+                <div class="d-grid gap-2">
+                  <button type="submit" class="btn btn-primary">Sign in</button>
+                </div>
+              </div>
+            </div>
+          </form>
           </div>
-         
         </div>
+       
       </div> 
     </section>
     <footer class="navbar-dark bg-dark">
@@ -188,5 +221,12 @@
     </script>
     <script src="./dist/js/bootstrap.bundle.js"></script>
     <script src="script.js"></script>
+    <script>
+      const phoneInputField = document.querySelector("#phone");
+      const phoneInput = window.intlTelInput(phoneInputField, {
+        utilsScript:
+          "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+      });
+    </script>
   </body>
 </html>

@@ -3,9 +3,11 @@
   --bs-dark-rgb: 14, 41, 51;
   --shadow-rgb: 0, 21, 89;
   --bs-body-font-size: 18px;
+  --bs-body-font-family: "Outfit", sans-serif;
 }
 
 body {
+  font-family: var(--bs-body-font-family);
   font-size: var(--bs-body-font-size);
   background-image: url("./assets/BG_light.svg");
   background-size: cover;
