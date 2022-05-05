@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable="no" />
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+    <link rel="manifest" href="./assets/site.webmanifest">
+    <link rel="mask-icon" href="./assets/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>Sprouts: Contact Us</title>
+    <link
+      rel="stylesheet"
+      href="./dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="app.css" />
+
+    <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+   />
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav id="navbar_top" class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">  
+            <img src="./assets/Sprouts_logo_dark.svg" alt="">  </a>
+            <div class="d-flex order-0 order-lg-1">
+          <button
+            class="navbar-toggler order-1 d-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <form class="d-flex order-lg-1 me-2">
+            <a href="contact-us.html" class="btn btn-primary btn-sm">
+              Get a FREE audit
+            </a>
+          </form>
+        </div>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 d-none">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Solutions
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Resources</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  href="#">About Us</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </nav>
+    </header>
+
+
+    <section class="position-relative d-flex align-items-top"
+    >
+      <div class="container position-relative zindex-5 py-3 mt-5">
+        <div class="row justify-content-md-start justify-content-top mb-5">
+              <!-- Thank you  -->
+              <div class="col-xl-4 col-sm-8 offset-sm-2 offset-xl-4 d-flex flex-column justify-content-between mt-4 pt-2 text-center">
+                <div class="thankyou-bg">
+                  ‍👍 <br>
+      Thank you for contacting us, our representative will get in touch with you soon!
+                </div>
+              </div>
+          
+          <!-- Contact US Page start here --> 
+          <div class="col-xl-6 col-sm-8 offset-sm-2 offset-xl-3 d-flex flex-column justify-content-between mt-4 pt-2">
+      
+          
+            <h2 class="heading_h2 mb-3 text-center">
+              Contact Us
+            </h2>
+            <p class="subTitle text-center mb-4">
+              A plug-and-play ABM platform that has all the tools and integrations you need for demand gen and sales intelligence.
+            </p>
+
+            <!-- Form Start here -->
+            <div class="col-xl-8  offset-xl-2">
+            <form id="login" onsubmit="process(event)">
+              <div class="form-bg">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Full name</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Your Name">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Company Email</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="yourname@example.com">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Title</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Your Title">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Phone Number</label>
+                <input class="form-control" id="phone" type="tel" placeholder="800 2738 9700">
+              </div>
+              <div class="col-12 ">
+                <div class="d-grid gap-2">
+                  <button type="submit" class="btn btn-primary">Sign in</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+          </div>
+        </div>
+       
+      </div> 
+    </section>
+    <footer class="navbar-dark bg-dark">
+      <nav class="navbar navbar-expand-lg py-5">
+        <div class="container">
+          <a class="navbar-brand col-12 col-lg-2 d-flex justify-content-center justify-content-lg-start" href="index.html">
+            <img src="./assets/Sprouts_logo_Light.svg" alt="">
+          </a>
+          <div class="collapse navbar-collapse d-flex flex-column flex-lg-row" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 flex-row gap-3 d-none">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Solutions
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Resources</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  href="#">About Us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col d-flex justify-content-center justify-content-lg-end"> 
+            <div class="icon d-flex">
+               <svg>
+                 <use xlink:href="./assets/sprite.svg#Group_1000002315"></use>
+               </svg><svg> 
+                 <use xlink:href="./assets/sprite.svg#Group_6759"></use>
+               </svg><svg>
+                 <use xlink:href="./assets/sprite.svg#Group_6758"></use>
+               </svg><svg>
+                 <use xlink:href="./assets/sprite.svg#Group_6757"></use>
+               </svg><svg>
+                 <use xlink:href="./assets/sprite.svg#Group_6760"></use>
+               </svg>
+             </div>
+           </div>
+        </div>
+
+      </nav>
+      <div class="container">
+        <div class="d-flex flex-column flex-sm-row justify-content-center copyright text-white">
+          <div class="col-12 col-sm-5 d-flex justify-content-center justify-content-sm-center">
+            Copyright © 2022 Sprouts
+          </div>
+          <div class="col-12 col-sm-7 text-end d-flex justify-content-center justify-content-sm-end d-none"> 
+           <a href=""> Terms of service</a>   |   <a href=""> policy</a>   | <a href="">  Cookie Policy</a>
+          </div>
+        </div>
+        </div>
+    </footer>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PWJVCM6REN"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-PWJVCM6REN');
+      gtag('event', 'ip_address', {'ip': '<?=$ip;?>'});
+    </script>
+    <script src="./dist/js/bootstrap.bundle.js"></script>
+    <script src="script.js"></script>
+    <script>
+      const phoneInputField = document.querySelector("#phone");
+      const phoneInput = window.intlTelInput(phoneInputField, {
+        utilsScript:
+          "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+      });
+    </script>
+  </body>
+</html>

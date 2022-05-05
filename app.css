@@ -479,7 +479,7 @@ p {
   letter-spacing: 0.005em;
 }
 .form-bg .form-control {
-  padding: 1rem;
+  padding: 0.75rem;
   box-shadow: 1px solid rgba(var(--bs-dark-rgb), 0.25);
   border-radius: 0;
 }
